@@ -1,33 +1,29 @@
-This repository is sample code for ASP.NET Core & Angular 4 (Angular 2) SPA.  
-Use the Visual Studio 2017 to development.  
+This repository is sample code for Angular 4 (Angular 2) SPA.  
+Use the Visual Studio Code to development.  
 
-# ASP.NET Core + Angular 4 教學 - Lazy Loading
+# Angular 4 教學 - Lazy Loading 共用模組
 
-介紹 Angular 4 的 Lazy Loading，避免寫 SPA 程式越做越大，啟動時載入全部的 JavaScript 檔很累贅又恨慢。  
-比較好的做法是用到什麼功能，再載入當下用到 Module 的 JavaScript 檔案，節省載入時間。  
+當 Angular 4 開始拆分模組後，會有一些 Component、Pipe、Directive、Service 需要共用，此時就可以建立一個共用模組，包含這些可被共用的內容。  
+本篇將介紹 Angular 4 的 Lazy Loading 共用模組。
 
 Blog：  
-[ASP.NET Core + Angular 4 教學 - Lazy Loading](https://blog.johnwu.cc/article/asp-net-core-angular-4-教學-lazy-loading.html)  
-Routing不熟悉的話，請先參考：  
-[ASP.NET Core + Angular 4 教學 - Routing](https://blog.johnwu.cc/article/asp-net-core-angular-4-教學-routing.html)
-
-程式碼延續之前範例：  
-[ASP.NET Core + Angular 4 教學 - Multiple Modules](/article/asp-net-core-angular-4-教學-multiple-modules.html)  
+[Angular 4 教學 - Lazy Loading 共用模組](https://blog.johnwu.cc/article/angular-4-lazy-loading-shared-module.html)  
 
 ## 說明
 
-安裝軟體的部分我就沒有詳細介紹，以下是我使用到的工具跟語言。
+安裝軟體的部分我就沒有詳細介紹，以下是我使用到的工具跟語言。  
 
 開發工具：
-1. Visual Studio 2017 (可使用其他版，只要有支援 ASP.NET Core 開發就可以。)
-2. Nodejs 6.9.x 以上版本 及 npm 3 以上版本
+1. Visual Studio Code。[官網下載頁面](https://code.visualstudio.com/Download)  
+> 基本上 VS Code 就是純文字編輯工具，你要用 Sublime、Notepade++、Atom、TextEdit都可以。  
+2. Nodejs 6.9.x 以上版本 及 npm 3 以上版本。[官網下載頁面](https://nodejs.org/en/download/)  
 
-開發語言：
-1. .NET Core 使用 C#
-2. Angular 4 使用 TypeScript
-
-下載範例後記得在專案目錄安裝 npm package
-
+下載範例後記得在專案目錄安裝 npm packages：
 ``` batch
 npm install
+```
+
+安裝完 npm packages 後，用以下指令啟動：
+``` batch
+npm run dev
 ```

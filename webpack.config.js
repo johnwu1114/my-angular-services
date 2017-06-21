@@ -1,6 +1,6 @@
 ﻿/// <binding ProjectOpened='Watch - Development' />
 var webpack = require("webpack");
-var wwwroot = __dirname + "/wwwroot";
+var wwwroot = __dirname;
 
 module.exports = {
     cache: true,

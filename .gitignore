@@ -1,7 +1,5 @@
 .DS_Store
 Thumbs.db
-.vs/
-bin/
-obj/
 node_modules/
 *.log
+package-lock.json

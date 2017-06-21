@@ -2,6 +2,9 @@
   "name": "my-website",
   "version": "1.0.0",
   "description": "This is example for Angular 4 from blog.johnwu.cc",
+  "scripts": {
+    "dev": "webpack --watch | lite-server"
+  },
   "dependencies": {
     "@angular/common": "4.0.2",
     "@angular/compiler": "4.0.2",

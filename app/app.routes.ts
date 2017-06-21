@@ -9,11 +9,11 @@ const routes: Route[] = [
     },
     {
         path: "first",
-        loadChildren: "./first/first.routes#FirstModule"
+        loadChildren: "./first/first.module#FirstModule"
     },
     {
         path: "second",
-        loadChildren: "./second/second.routes#SecondModule"
+        loadChildren: "./second/second.module#SecondModule"
     }
 ];
 

@@ -1,6 +1,7 @@
 ﻿import { NgModule } from "@angular/core";
 import { Route, RouterModule } from "@angular/router";
 import { RouteUtil } from "../shared/utils/route.util";
+import { SharedModule } from "../shared/shared.module";
 import { OneComponent } from "./components/one.component";
 import { TwoComponent } from "./components/two.component";
 import { ThreeComponent } from "./components/three.component";
@@ -24,7 +25,8 @@ const routes: Route[] = [
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        SharedModule
     ],
     declarations: [
         RouteUtil.getComponents(routes)

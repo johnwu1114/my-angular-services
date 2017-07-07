@@ -4,7 +4,7 @@ import { RouteUtil } from "../shared/utils/route.util";
 import { SharedModule } from "../shared/shared.module";
 import { OneComponent } from "./components/one.component";
 import { TwoComponent } from "./components/two.component";
-import { ThreeComponent } from "./components/three.component";
+import { ModuleService } from "../shared/services/module.service";
 
 const routes: Route[] = [
     {
@@ -17,9 +17,6 @@ const routes: Route[] = [
     }, {
         path: "two",
         component: TwoComponent
-    }, {
-        path: "three",
-        component: ThreeComponent
     }
 ];
 
@@ -33,6 +30,9 @@ const routes: Route[] = [
     ],
     exports: [
         RouterModule
+    ],
+    providers: [
+        ModuleService
     ]
 })
 export class FirstModule { }

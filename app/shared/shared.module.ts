@@ -1,14 +1,11 @@
 import { NgModule } from "@angular/core";
-import { LocalizationPipe } from "./pipes/localization.pipe";
+import { SharedModuleService } from "./services/sharedModule.service";
+import { SingletonService } from "./services/singleton.service";
 
 @NgModule({
-    imports: [
-    ],
-    declarations: [
-        LocalizationPipe
-    ],
-    exports: [
-        LocalizationPipe
+    providers:[
+        SharedModuleService,
+        SingletonService
     ]
 })
 export class SharedModule { }

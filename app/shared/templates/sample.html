@@ -1,8 +1,26 @@
-﻿<h2>Mobule: {{mobule}}</h2>
-<h3>Component: {{component}}</h3>
-
-<p>Login = {{'Login'|R}}</p>
-<p>Password = {{'Password'|R}}</p>
-<p>UserName = {{'UserName'|R}}</p>
-<p>Send = {{'Send'|R}}</p>
-<p>InternalServerError = {{'InternalServerError'|R:'Message'}}</p>
+﻿<table>
+    <colgroup>
+        <col width="200" />
+    </colgroup>
+    <tbody>
+        <tr>
+            <th colspan="2">{{mobule}} -> {{component}}</th>
+        </tr>
+        <tr>
+            <td>Controller Service Id</td>
+            <td>{{controllerServiceId}}</td>
+        </tr>
+        <tr>
+            <td>Module Service Id</td>
+            <td>{{moduleServiceId}}</td>
+        </tr>
+        <tr>
+            <td>Shared Module Service Id</td>
+            <td>{{sharedModuleServiceId}}</td>
+        </tr>
+        <tr>
+            <td>Singleton Service Id</td>
+            <td>{{singletonServiceId}}</td>
+        </tr>
+    </tbody>
+</table>

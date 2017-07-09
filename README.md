@@ -1,13 +1,13 @@
 This repository is sample code for Angular 4 (Angular 2) SPA.  
 Use the Visual Studio Code to development.  
 
-# Angular 4 教學 - Lazy Loading 共用模組
+# Angular 4 教學 - Service
 
-當 Angular 4 開始拆分模組後，會有一些 Component、Pipe、Directive、Service 需要共用，此時就可以建立一個共用模組，包含這些可被共用的內容。  
-本篇將介紹 Angular 4 的 Lazy Loading 共用模組。
+為了使 Component 程式碼更致力於與 Template 互動，同常會把邏輯或 Client 端的資料暫存用 Service 包裝，需要用到 Service 時，再透過建構子注入使用。  
+本篇將介紹 Angular 4 (Angular 2) 的 Service 包裝及 DI (Dependency Injection)。
 
 Blog：  
-[Angular 4 教學 - Lazy Loading 共用模組](https://blog.johnwu.cc/article/angular-4-lazy-loading-shared-module.html)  
+[Angular 4 教學 - Service](https://blog.johnwu.cc/article/angular-4-services.html)  
 
 ## 說明
 

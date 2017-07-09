@@ -1,10 +1,10 @@
 ﻿import { NgModule } from "@angular/core";
 import { Route, RouterModule } from "@angular/router";
 import { RouteUtil } from "../shared/utils/route.util";
-import { SharedModule } from "../shared/shared.module";
 import { OneComponent } from "./components/one.component";
 import { TwoComponent } from "./components/two.component";
 import { ModuleService } from "../shared/services/module.service";
+import { SingletonService } from "../shared/services/singleton.service";
 
 const routes: Route[] = [
     {
@@ -29,6 +29,10 @@ const routes: Route[] = [
     ],
     exports: [
         RouterModule
+    ],
+    providers: [
+        ModuleService,
+        SingletonService
     ]
 })
-export class FirstModule { }
+export class ThirdModule { }

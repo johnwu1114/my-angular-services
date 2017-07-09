@@ -4,6 +4,8 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { AppRoutes } from "./app.routes";
+import { ModuleService } from "./shared/services/module.service";
+import { SingletonService } from "./shared/services/singleton.service";
 
 @NgModule({
     imports: [
@@ -16,6 +18,10 @@ import { AppRoutes } from "./app.routes";
     ],
     bootstrap: [
         AppComponent
+    ],
+    providers: [
+        ModuleService,
+        SingletonService
     ]
 })
 export class AppModule { }

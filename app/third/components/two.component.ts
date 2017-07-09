@@ -9,9 +9,9 @@ import { SingletonService } from "../../shared/services/singleton.service";
         ControllerService
     ]
 })
-export class OneComponent {
-    mobule = "First";
-    component = "One";
+export class TwoComponent {
+    mobule = "Third";
+    component = "Two";
     controllerServiceId: number;
     moduleServiceId: number;
     singletonServiceId: number;

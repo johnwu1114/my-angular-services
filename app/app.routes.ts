@@ -1,5 +1,7 @@
 import { Route } from "@angular/router";
 import { RouteUtil } from "./shared/utils/route.util";
+import { FirstModule } from "./first/first.module";
+import { SecondModule } from "./second/second.module";
 
 const routes: Route[] = [
     {
@@ -9,11 +11,15 @@ const routes: Route[] = [
     },
     {
         path: "first",
-        loadChildren: "./first/first.module#FirstModule"
+        loadChildren: () => FirstModule
     },
     {
         path: "second",
-        loadChildren: "./second/second.module#SecondModule"
+        loadChildren: () => SecondModule
+    },
+    {
+        path: "third",
+        loadChildren: "./third/third.module#ThirdModule"
     }
 ];
 

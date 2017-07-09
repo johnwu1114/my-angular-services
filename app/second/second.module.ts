@@ -22,17 +22,13 @@ const routes: Route[] = [
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes),
-        SharedModule
+        RouterModule.forChild(routes)
     ],
     declarations: [
         RouteUtil.getComponents(routes)
     ],
     exports: [
         RouterModule
-    ],
-    providers: [
-        ModuleService
     ]
 })
 export class SecondModule { }

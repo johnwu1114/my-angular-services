@@ -1,18 +1,12 @@
 import { Injectable } from "@angular/core";
+import { AbstractBaseService } from "./abstractBase.service";
 
 @Injectable()
-export class SingletonService {
-    private static instance: SingletonService;
-    private _id: number;
+export class SingletonService extends AbstractBaseService {
+    private static _instance: SingletonService;
 
     constructor() {
-        return SingletonService.instance = SingletonService.instance || this;
-    }
-
-    public getId(): number {
-        if (!this._id) {
-            this._id = Math.floor((1 + Math.random()) * 0x10000);
-        }
-        return this._id;
+        super();
+        return SingletonService._instance = SingletonService._instance || this;
     }
 }

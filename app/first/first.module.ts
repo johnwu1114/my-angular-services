@@ -1,9 +1,8 @@
 ﻿import { NgModule } from "@angular/core";
 import { Route, RouterModule } from "@angular/router";
 import { RouteUtil } from "../shared/utils/route.util";
-import { SharedModule } from "../shared/shared.module";
-import { OneComponent } from "./components/one.component";
-import { TwoComponent } from "./components/two.component";
+import { SampleComponent } from "../shared/components/sample.component";
+import { SharedModule } from "../shared/modules/shared.module";
 import { ModuleService } from "../shared/services/module.service";
 
 const routes: Route[] = [
@@ -13,22 +12,23 @@ const routes: Route[] = [
         pathMatch: "full",
     }, {
         path: "one",
-        component: OneComponent
+        component: SampleComponent
     }, {
         path: "two",
-        component: TwoComponent
+        component: SampleComponent
     }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forChild(routes)
-    ],
-    declarations: [
-        RouteUtil.getComponents(routes)
+        RouterModule.forChild(routes),
+        SharedModule
     ],
     exports: [
         RouterModule
+    ],
+    providers: [
+        ModuleService
     ]
 })
 export class FirstModule { }

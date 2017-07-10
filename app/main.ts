@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { AppRoutes } from "./app.routes";
-import { ModuleService } from "./shared/services/module.service";
+import { AppModuleService } from "./shared/services/appModule.service";
 import { SingletonService } from "./shared/services/singleton.service";
 
 @NgModule({
@@ -20,7 +20,7 @@ import { SingletonService } from "./shared/services/singleton.service";
         AppComponent
     ],
     providers: [
-        ModuleService,
+        AppModuleService,
         SingletonService
     ]
 })
